@@ -9,8 +9,8 @@ export default function () {
     setUserEmail(email);
   }
 
-  function limparEmail(){
-    setUserEmail('')
+  function limparEmail() {
+    setUserEmail("");
   }
 
   return (
@@ -31,8 +31,8 @@ export default function () {
       </button>
       {userEmail && (
         <div>
-            <p>O email do usuario é {userEmail}</p>
-            <button onClick={limparEmail}>Limpar Email</button>
+          <p>O email do usuario é {userEmail}</p>
+          <button onClick={limparEmail}>Limpar Email</button>
         </div>
       )}
     </>
