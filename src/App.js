@@ -1,13 +1,18 @@
+import { useState } from "react";
+
 import "./App.css";
-import OutraLista from "./components/OutraLista.js";
+import SeuNome from "./components/SeuNome";
+import Saudacao from "./components/Saudacao";
 
 function App() {
-  const meusItens = ['Angular', 'Vue', 'React'];
+  const [nome, setNome] = useState();
 
-  return <div className="App">
-    <OutraLista itens={meusItens}/>
-    <OutraLista itens={[]}/>
-  </div>;
+  return (
+    <div className="App">
+      <SeuNome setNome={setNome} />
+      <Saudacao nome={nome}/>
+    </div>
+  );
 }
 
 export default App;
