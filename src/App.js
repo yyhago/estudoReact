@@ -1,18 +1,8 @@
-import { useState } from "react";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
-import SeuNome from "./components/SeuNome";
-import Saudacao from "./components/Saudacao";
 
 function App() {
-  const [nome, setNome] = useState();
-
-  return (
-    <div className="App">
-      <SeuNome setNome={setNome} />
-      <Saudacao nome={nome}/>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
